@@ -1,4 +1,4 @@
-# Deployment Model CNN (Kemangi vs Belimbing)
+# Deployment Model CNN (Sirih vs Nangka)
 
 ## Deskripsi singkat
 
