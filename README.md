@@ -2,13 +2,13 @@
 
 ## Deskripsi singkat
 
-Repository ini berisi semua file yang dibutuhkan untuk melakukan deployment model Machine Learning Image Classification menggunakan CNN (Convolutional Neural Network). Adapun model yang digunakan merupakan model untuk memprediksi gambar kemangi vs belimbing.
+Repository ini berisi semua file yang dibutuhkan untuk melakukan deployment model Machine Learning Image Classification menggunakan CNN (Convolutional Neural Network). Adapun model yang digunakan merupakan model untuk memprediksi gambar sirih atau nangka.
 
 #
 
 ## Sekilas mengenai input model
 
-Agar dapat memprediksi kucing atau anjing, data input model harus mengikuti format sebagai berikut:
+Agar dapat memprediksi sirih atau nangka, data input model harus mengikuti format sebagai berikut:
 
 -   Gambar dengan format umum seperti .jpeg, .png, .webp, dsb.
 -   Gambar dikonversi ke dalam bentuk array/tensor
@@ -23,7 +23,7 @@ Agar dapat memprediksi kucing atau anjing, data input model harus mengikuti form
 -   templates/
     -   index.html --> Berisi template website.
 -   app.py --> Berisi konfigurasi route dan proses prediksi model untuk API.
--   kemangi_belimbing_model_class.h5 --> Model Image Classification CNN yang sudah di-training.
+-   sirih_nangka_model_class.h5 --> Model Image Classification CNN yang sudah di-training.
 -   requirements.txt --> Berisi daftar dependency/package Python yang diperlukan untuk menjalankan API dan model Image Classification CNN.
 
 #
@@ -31,18 +31,18 @@ Agar dapat memprediksi kucing atau anjing, data input model harus mengikuti form
 ## Cara menjalankan API pada komputer Anda
 
 1. Pastikan Anda sudah menginstall Anaconda.
-1. Buka terminal/command prompt/power shell.
-1. Buat virtual environment dengan\
+2. Buka terminal/command prompt/power shell.
+3. Buat virtual environment dengan\
    `conda create -n <nama-environment> python=3.9`
-1. Aktifkan virtual environment dengan\
+4. Aktifkan virtual environment dengan\
    `conda activate <nama-environment>`
-1. Install semua dependency/package Python dengan\
+5. Install semua dependency/package Python dengan\
    `pip install -r requirements.txt`
-1. Jalankan API menggunakan perintah\
+6. Jalankan API menggunakan perintah\
    `python app.py`
 
 ## Akses melalui Website
 
 1. Anda akan diberikan URL untuk membuka website berupa `localhost:5000/` atau `127.0.0.1:5000/`.
-1. Buka URL dengan browser, coba masukkan gambar kemangi atau belimbing yang ingin di prediksi.
-1. Anda akan diberikan prediksi bahwa pada gambar tersebut adalah kemangi atau belimbing pada halaman website.
+2. Buka URL dengan browser, coba masukkan gambar sirih atau nangka yang ingin di prediksi.
+3. Anda akan diberikan prediksi bahwa pada gambar tersebut adalah sirih atau nangka pada halaman website.
